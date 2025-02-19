@@ -15,7 +15,7 @@ build:
 
 webform:
   - name: svg_file
-    prompt: SVG File to Convert to PNG
+    prompt: Convert SVG to PNG
     type: file
 
 launch:
