@@ -1,0 +1,18 @@
+runner:
+  name: Convert SVG to PNG
+  description: Convert SVG to PNG.
+  version: 0.0.1
+
+build:
+  commands: |
+    echo "START: Building the runner"
+    python3 -m pip install -U -r requirements.txt
+    echo "END: Building the runner"
+
+webform:
+  - name: svg_file
+    prompt: SVG File to Convert to PNG
+    type: file
+
+launch:
+  command: app.py --svg_file ${svg_file}
